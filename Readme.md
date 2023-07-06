@@ -26,7 +26,7 @@ Inportant:
     "build": "tsup src/index.tsx --format esm, cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm, cjs --dts --watch"
   }
-  
+
 }
 
 ---
@@ -34,3 +34,20 @@ Inportant:
 npm i -D @types/react react @types/react-dom
 
 
+---
+
+## Storybook
+
+npx sb init --builder @storybook/builder-vite
+ --type react --use-npm
+... 
+
+Solutions
+
+npx sb init --builder=vite @storybook/builder-vite --type react
+
+npx storybook@latest init --builder vite  --type react
+
+---
+
+npm i vite @vitejs/plugin-react -D
