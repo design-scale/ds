@@ -1,4 +1,13 @@
+import {styled} from './styles'
+
 import {colors} from '@ds-flow/tokens'
+
+const Button = styled('button', {
+    backgroundColor: '$ignite700',
+    color: '$gray200',
+    padding: '$2',
+})
+
 console.log(colors)
 
 export function App() {
