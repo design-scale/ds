@@ -2,14 +2,31 @@ import {styled} from './styles'
 
 import {colors} from '@ds-flow/tokens'
 
-const Button = styled('button', {
-    backgroundColor: '$ignite700',
-    color: '$gray200',
-    padding: '$2',
+export const Button = styled('button', {
+
+    fontFamily: '$default',
+    backgroundColor: '$ignite300',
+    color: 'White',
+    padding: '$2 $6',
+    border: 'none',
+    cursor: 'pointer',
+    borderRadius: '100px',
+
+
+    variants: {
+        size: {
+            small: {
+                fontSize: 14,
+                padding: '$2 $6'
+            },
+            big: {
+                fontSize: 18,
+                padding: '$4 $8'
+            }
+        }
+    },
+
+    defaultVariant: {
+        size: 'small'
+    }
 })
-
-console.log(colors)
-
-export function App() {
-    return(<h1 style={{color: colors.ignite300}}>Hello World</h1>)
-}

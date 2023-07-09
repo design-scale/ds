@@ -49,4 +49,9 @@ declare const space: {
     80: string;
 };
 
-export { colors, fontSizes, space };
+declare const fonts: {
+    default: string;
+    code: string;
+};
+
+export { colors, fontSizes, fonts, space };

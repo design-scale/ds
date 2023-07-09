@@ -22,6 +22,7 @@ var src_exports = {};
 __export(src_exports, {
   colors: () => colors,
   fontSizes: () => fontSizes,
+  fonts: () => fonts,
   space: () => space
 });
 module.exports = __toCommonJS(src_exports);
@@ -61,7 +62,7 @@ var fontSizes = {
   "9xl": "6rem"
 };
 
-// src/spacings.ts
+// src/space.ts
 var space = {
   1: "0.25rem",
   2: "0.5rem",
@@ -79,9 +80,16 @@ var space = {
   64: "16rem",
   80: "20rem"
 };
+
+// src/fonts.ts
+var fonts = {
+  default: "Roboto, sans-serif",
+  code: "monospace"
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   colors,
   fontSizes,
+  fonts,
   space
 });
