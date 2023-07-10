@@ -16,23 +16,6 @@ var colors = {
   ignite900: "#00291D"
 };
 
-// src/font-sizes.ts
-var fontSizes = {
-  xxs: "0.625rem",
-  xs: "0.75rem",
-  sm: "0.875rem",
-  md: "1rem",
-  lg: "1.125rem",
-  xl: "1.25rem",
-  "2xl": "1.5rem",
-  "4xl": "2rem",
-  "5xl": "2.25rem",
-  "6xl": "3rem",
-  "7xl": "4rem",
-  "8xl": "4.5rem",
-  "9xl": "6rem"
-};
-
 // src/space.ts
 var space = {
   1: "0.25rem",
@@ -52,14 +35,59 @@ var space = {
   80: "20rem"
 };
 
+// src/radii.ts
+var radii = {
+  px: "1px",
+  xs: "4px",
+  sm: "6px",
+  md: "8px",
+  lg: "16px",
+  full: "99999px"
+};
+
 // src/fonts.ts
 var fonts = {
   default: "Roboto, sans-serif",
   code: "monospace"
 };
+
+// src/font-sizes.ts
+var fontSizes = {
+  xxs: "0.625rem",
+  xs: "0.75rem",
+  sm: "0.875rem",
+  md: "1rem",
+  lg: "1.125rem",
+  xl: "1.25rem",
+  "2xl": "1.5rem",
+  "4xl": "2rem",
+  "5xl": "2.25rem",
+  "6xl": "3rem",
+  "7xl": "4rem",
+  "8xl": "4.5rem",
+  "9xl": "6rem"
+};
+
+// src/font-weights.ts
+var fontWeights = {
+  regular: "400",
+  medium: "500",
+  bold: "700"
+};
+
+// src/line-heights.ts
+var lineHeights = {
+  shorter: "125%",
+  short: "140%",
+  base: "160%",
+  tall: "180%"
+};
 export {
   colors,
   fontSizes,
+  fontWeights,
   fonts,
+  lineHeights,
+  radii,
   space
 };

@@ -15,22 +15,6 @@ declare const colors: {
     ignite900: string;
 };
 
-declare const fontSizes: {
-    xxs: string;
-    xs: string;
-    sm: string;
-    md: string;
-    lg: string;
-    xl: string;
-    '2xl': string;
-    '4xl': string;
-    '5xl': string;
-    '6xl': string;
-    '7xl': string;
-    '8xl': string;
-    '9xl': string;
-};
-
 declare const space: {
     1: string;
     2: string;
@@ -49,9 +33,47 @@ declare const space: {
     80: string;
 };
 
+declare const radii: {
+    px: string;
+    xs: string;
+    sm: string;
+    md: string;
+    lg: string;
+    full: string;
+};
+
 declare const fonts: {
     default: string;
     code: string;
 };
 
-export { colors, fontSizes, fonts, space };
+declare const fontSizes: {
+    xxs: string;
+    xs: string;
+    sm: string;
+    md: string;
+    lg: string;
+    xl: string;
+    '2xl': string;
+    '4xl': string;
+    '5xl': string;
+    '6xl': string;
+    '7xl': string;
+    '8xl': string;
+    '9xl': string;
+};
+
+declare const fontWeights: {
+    regular: string;
+    medium: string;
+    bold: string;
+};
+
+declare const lineHeights: {
+    shorter: string;
+    short: string;
+    base: string;
+    tall: string;
+};
+
+export { colors, fontSizes, fontWeights, fonts, lineHeights, radii, space };
