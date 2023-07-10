@@ -2,7 +2,7 @@ import { ComponentProps } from 'react'
 import {styled} from '../styles'
 export const Text = styled('p', {
     fontFamily: '$default',
-    lineHeight: '16px',
+    lineHeight: '$base',
     margin: 0,
     color: '$gray100',
     variants: {

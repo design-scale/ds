@@ -12,7 +12,8 @@ export const { styled, css, globalCss, keyframes, getCssText, createTheme, theme
     themeMap:{
         ...defaultThemeMap,
         height: 'space',
-        width: 'space'
+        width: 'space',
+        borderRadius: 'radii'
     },
     theme: {
         colors,
