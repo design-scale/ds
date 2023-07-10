@@ -1,4 +1,11 @@
-import {colors,space, fonts} from '@ds-flow/tokens'
+import { 
+    colors,
+    fonts,
+    fontSizes,
+    fontWeights,
+    lineHeights,
+    radii,
+    space } from '@ds-flow/tokens'
 import {createStitches, defaultThemeMap} from '@stitches/react'
 
 export const { styled, css, globalCss, keyframes, getCssText, createTheme, theme, config } = createStitches({
@@ -8,8 +15,12 @@ export const { styled, css, globalCss, keyframes, getCssText, createTheme, theme
         width: 'space'
     },
     theme: {
-        colors: colors,
-        space: space,
-        fonts: fonts 
+        colors,
+        fonts,
+        fontSizes,
+        fontWeights,
+        lineHeights,
+        radii,
+        space
     }
 })

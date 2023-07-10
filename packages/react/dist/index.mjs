@@ -52,9 +52,43 @@ var space = {
   64: "16rem",
   80: "20rem"
 };
+var radii = {
+  px: "1px",
+  xs: "4px",
+  sm: "6px",
+  md: "8px",
+  lg: "16px",
+  full: "99999px"
+};
 var fonts = {
   default: "Roboto, sans-serif",
   code: "monospace"
+};
+var fontSizes = {
+  xxs: "0.625rem",
+  xs: "0.75rem",
+  sm: "0.875rem",
+  md: "1rem",
+  lg: "1.125rem",
+  xl: "1.25rem",
+  "2xl": "1.5rem",
+  "4xl": "2rem",
+  "5xl": "2.25rem",
+  "6xl": "3rem",
+  "7xl": "4rem",
+  "8xl": "4.5rem",
+  "9xl": "6rem"
+};
+var fontWeights = {
+  regular: "400",
+  medium: "500",
+  bold: "700"
+};
+var lineHeights = {
+  shorter: "125%",
+  short: "140%",
+  base: "160%",
+  tall: "180%"
 };
 
 // src/styles/index.ts
@@ -66,36 +100,51 @@ var { styled, css, globalCss, keyframes, getCssText, createTheme, theme, config 
   }),
   theme: {
     colors,
-    space,
-    fonts
+    fonts,
+    fontSizes,
+    fontWeights,
+    lineHeights,
+    radii,
+    space
   }
 });
 
-// src/index.tsx
-var Button = styled("button", {
+// src/components/Box.tsx
+var Box = styled("div", {
+  padding: "$4",
+  borderRadius: "12px",
+  backgroundColor: "$gray800",
+  border: "1px solid $gray600"
+});
+
+// src/components/Text.tsx
+var Text = styled("p", {
   fontFamily: "$default",
-  backgroundColor: "$ignite300",
-  color: "White",
-  padding: "$2 $6",
-  border: "none",
-  cursor: "pointer",
-  borderRadius: "100px",
+  lineHeight: "16px",
+  margin: 0,
+  color: "$gray100",
   variants: {
     size: {
-      small: {
-        fontSize: 14,
-        padding: "$2 $6"
-      },
-      big: {
-        fontSize: 18,
-        padding: "$4 $8"
-      }
+      xxs: { fontSize: "$xxs" },
+      xs: { fontSize: "$xs" },
+      sm: { fontSize: "$sm" },
+      md: { fontSize: "$md" },
+      lg: { fontSize: "$lg" },
+      xl: { fontSize: "$xl" },
+      "2xl": { fontSize: "$2xl" },
+      "4xl": { fontSize: "$4xl" },
+      "5xl": { fontSize: "$5xl" },
+      "6xl": { fontSize: "$6xl" },
+      "7xl": { fontSize: "$7xl" },
+      "8xl": { fontSize: "$8xl" },
+      "9xl": { fontSize: "$9xl" }
     }
   },
-  defaultVariant: {
-    size: "small"
+  defaultVariants: {
+    size: "md"
   }
 });
 export {
-  Button
+  Box,
+  Text
 };
