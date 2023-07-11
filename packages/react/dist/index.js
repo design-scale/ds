@@ -3125,10 +3125,10 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx2 = jsxWithValidationDynamic;
+        var jsx3 = jsxWithValidationDynamic;
         var jsxs2 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx2;
+        exports.jsx = jsx3;
         exports.jsxs = jsxs2;
       })();
     }
@@ -3154,6 +3154,7 @@ __export(src_exports, {
   Box: () => Box,
   Button: () => Button,
   Heading: () => Heading,
+  MultiStep: () => MultiStep,
   Text: () => Text
 });
 module.exports = __toCommonJS(src_exports);
@@ -3433,12 +3434,22 @@ var Button = styled("button", {
     icon: "small"
   }
 });
+
+// src/components/MultiStep/styles.ts
+var MultiStepContainer = styled("div", {});
+
+// src/components/MultiStep/index.tsx
+var import_jsx_runtime2 = __toESM(require_jsx_runtime());
+function MultiStep() {
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(MultiStepContainer, {});
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
   Box,
   Button,
   Heading,
+  MultiStep,
   Text
 });
 /*! Bundled license information:

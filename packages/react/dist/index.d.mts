@@ -1040,4 +1040,8 @@ declare const Button: _stitches_react_types_styled_component.StyledComponent<"bu
 interface ButtonProps extends ComponentProps<typeof Button> {
 }
 
-export { Avatar, AvatarProps, Box, BoxProps, Button, ButtonProps, Heading, HeadingProps, Text, TextProps };
+interface MultiStepProps {
+}
+declare function MultiStep(): react_jsx_runtime.JSX.Element;
+
+export { Avatar, AvatarProps, Box, BoxProps, Button, ButtonProps, Heading, HeadingProps, MultiStep, MultiStepProps, Text, TextProps };
