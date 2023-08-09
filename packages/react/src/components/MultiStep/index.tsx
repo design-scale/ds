@@ -26,3 +26,10 @@ export function MultiStep({ size, currentStep = 1 }: MultiStepProps) {
 //const result = Array.from({length}, (_, i) => i + 1)
 // O segundo argumento da função Array.from() é uma função de mapeamento que é chamada para cada item no array resultante. Neste caso, o argumento _ é ignorado (é comum usar _ para argumentos não utilizados) e i é o índice do item. i + 1 é usado para gerar uma sequência de números começando de 1, já que os índices começam de 0.
 //console.log(result)
+
+
+// for (let step = 1; step <= size; step++) {
+//  steps.push(
+//    <Step key={step} active={currentStep >= step} />
+//  );
+// s}
