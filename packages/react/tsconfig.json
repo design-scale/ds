@@ -1,4 +1,4 @@
 {
     "extends": "@ds-flow/ts-config/react.json",
-    "include": ["src"]
+    "include": ["src", "../docs/src/stories/TextArea.stories.ts"]
   }
