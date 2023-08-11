@@ -1,5 +1,5 @@
 import { themes } from '@storybook/theming';
-
+import React from 'react';
 
 /** @type { import('@storybook/react').Preview } */
 
